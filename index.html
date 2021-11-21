@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="chart_myauto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.css">  
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.js" rel="stylesheet" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.js"></script>  
+</head>
+
+<table ><tr><td>
+<div id="myauto_demo" class="myauto_container">
+  <div class=control>
+    <input id=checkall type="checkbox" />All |
+     |
+    <a href='#' id=clearsort>(clear sort)</a>
+  </div>
+  <table>
+    <thead>
+      <tr class=title>
+        <td></td>
+        <td><input id=checkvisible type="checkbox" /></td>
+        <td style="white-space: nowrap" class=sorter col='key'>
+          <input class=autofocus type="text" id="category" placeholder="filter category">
+        </td>
+        <td class=sorter col='total'>total</td>
+        <td class=sorter col='max'>max</td>
+        <td class=sorter col='points'>#points</td>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+</td><td>
+<div id="chart">
+  <svg></svg>
+</div>
+</td></tr></table>
+
+<script src="chart_myauto.js"></script>
+<script src="chart_app.js"></script>
+
+</body>
+
+</html>

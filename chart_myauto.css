@@ -1,0 +1,52 @@
+.myauto_container{
+    width:400px;
+    float:left;
+}
+#chart1{
+    float:left;
+}
+.myauto_container b{
+    color:red;
+}
+.myauto_container input{
+ 
+}
+
+.myauto_container td{
+    border:1pt solid green;
+    padding: 2pt;
+}
+
+[sort=asc]:after{
+  content: "\25B2" ;
+  font-size: small; 
+}
+[sort=desc]:after{
+  content: '\25BC';
+  font-size: small; 
+
+}
+.sorter{
+    cursor: pointer; 
+}
+input[type='checkbox'] {
+    width: 1em;
+    height: 1em;
+}
+.control{
+    padding: 10pt;
+}
+.title{
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+#chart{
+    width: 600pt;
+    height:500pt;
+}
+td{
+    vertical-align: top;
+}
+table{
+  border-collapse: collapse;
+}
